@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinSwitch Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .cta-button {
+            background-color: #d9ff00;
+            padding: 10px 20px;
+            color: #333;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #c5e600;
+        }
+
+        /* Main section */
+        .main-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+            min-height: 100vh;
+        }
+        .main-image {
+            width: 10px;
+            height: 10px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 100px;
+            margin-right: 50px;
+        }
+        .main-text {
+            margin: 0px 200px 0px 50px;
+            padding-right: 20px;
+           
+        }
+        .why-matters {
+            text-align: left;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .why-matters h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .why-matters-items {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .item {
+            text-align: left;
+            width: 23%;
+        }
+
+        .item img {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-section {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .main-text, .main-image {
+                padding: 0;
+                text-align: center;
+            }
+
+            .why-matters-items {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .item {
+                width: 100%;
+            }
+        }
+
+        /* Scroll animations */
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="CoinSwitch Logo">
+    <nav>
+        <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Coins</a></li>
+            <li><a href="#">Ventures</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#" class="cta-button">Login To Pro</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="main-section">
+    <div class="main-image"></div>
+        <img src="Screenshot 2024-09-17 112513.png" width="400px" height="400px" alt="Web3 Graphic">
+    </div>
+    <div class="main-text">
+        <h1>We believe that Web3 and blockchain are the foundations of the new digital economy.</h1>
+        <p>We're partnering with startups that are advancing the future of Blockchain technology. Providing early stage founders with the capital, network connections, and most importantly, the advice to transform the Web3 landscape in India.</p>
+    </div>
+</section>
+
+<section class="why-matters">
+    <h2>Why it Matters?</h2>
+    <div class="why-matters-items">
+        <div class="item">
+            <img src="Screenshot 2024-09-17 112803.png" alt="Icon 1">
+            <p>Partnership with India’s largest wealth tech destination</p>
+        </div>
+        <div class="item">
+            <img src="Screenshot 2024-09-17 112815.png" alt="Icon 2">
+            <p>Access to a network of 70+ global venture capital partners</p>
+        </div>
+        <div class="item">
+            <img src="Screenshot 2024-09-17 112821.png" alt="Icon 3">
+            <p>Capital infusion up to $250,000</p>
+        </div>
+        <div class="item">
+            <img src="Screenshot 2024-09-17 112832.png" alt="Icon 4">
+            <p>Mentorship from in-house experts</p>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
